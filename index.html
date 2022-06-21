@@ -4,11 +4,13 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <!-- Fontawesome -->
   <link
     href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     rel="stylesheet"
   />
+  
   <!-- Bootswatch Darkly Theme -->
   <link
     href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css"
@@ -17,8 +19,8 @@
   <title>JS Todo List</title>
 </head>
 <body>
-  <!-- Navbar -->
 
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">JS Todo List</a>
     <button
@@ -41,9 +43,9 @@
           </a>
         </li>
       </ul>
-      <!-- <form class="form-inline my-2 my-lg-0" id="filters">
+      <form class="form-inline my-2 my-lg-0" id="filters">
         <label class="font-weight-bold text-info mr-3">Filters</label>
-        <input type="radio" name="type" value="all" class="mx-1">
+        <input type="radio" name="type" value="all" class="mx-1" checked>
         <label for="male" class="mb-0">All</label>
         <input type="radio" name="type" value="completed" class="mx-1">
         <label for="female" class="mb-0">Completed</label>
@@ -60,13 +62,12 @@
         <button class="btn btn-outline-info my-2 my-sm-0" type="submit" id="search">
           Search
         </button>
-      </form> -->
+      </form>
     </div>
   </nav>
 
   <!-- Modal -->
-  
-  <!-- <div
+  <div
     class="modal fade"
     id="modal"
     tabindex="-1"
@@ -130,7 +131,7 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <main>
     <div class="container pt-3">
@@ -139,7 +140,6 @@
       </div>
 
       <!-- Add Todo -->
-
       <div>
         <form> 
           <div class="row">
@@ -171,7 +171,6 @@
       </div>
 
       <!-- Table -->
-
       <div class="mt-5">
         <table class="table table-striped" id="table">
           <thead>
@@ -187,25 +186,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                Learn JS
-              </td>
-              <td>
-                Watch Javascript tutorials on Youtube
-              </td>
-              <td class="text-center">
-                <input type="checkbox">
-              </td>
-              <td class="text-right">
-                <button class="btn btn-primary mb-1">
-                  <i class="fa fa-pencil"></i>
-                </button>
-                <button class="btn btn-danger mb-1 ml-1">
-                  <i class="fa fa-trash"></i>
-                </button>
-              </td>
-            </tr>
+            <!-- Content generated with JS -->
           </tbody>
         </table>
       </div>
@@ -218,9 +199,12 @@
     integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
     crossorigin="anonymous"
   ></script>
+
   <!-- Bootstrap -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
   <!-- JS Code -->
-  <script src="./index.js"></script>
+  <script src="./js/index.js" type="module"></script>
+
 </body>
 </html>
